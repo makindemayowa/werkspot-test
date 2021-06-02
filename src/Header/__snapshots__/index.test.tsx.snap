@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header element creates a consistent snapshot 1`] = `
+<div
+  className="container-fluid header"
+>
+  <div
+    className="flex"
+  >
+    <div>
+      <div
+        className="item-cont"
+      >
+        <div
+          className="item"
+        >
+          <img
+            alt="remove red eye icon"
+            src="remove-red-eye.svg"
+          />
+          <span>
+            Statuses
+          </span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        className="flex"
+      >
+        <div
+          className="item-cont"
+        >
+          <div
+            className="item input"
+          >
+            <img
+              alt="search icon"
+              src="search.svg"
+            />
+            <input
+              onChange={[Function]}
+              placeholder="Search by title"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
