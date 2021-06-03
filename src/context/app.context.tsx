@@ -20,6 +20,8 @@ interface IActionType {
   SET_TODOS: string;
   SET_SEARCH: string;
   UPDATE_CARD_COLUMN: string;
+  EDIT_CARD: string;
+  DELETE_CARD: string;
 };
 
 const getTodos = (): ITodoData[] => {
@@ -42,7 +44,9 @@ export const actionType: IActionType = {
   ADD_NEW_CARD: 'ADD_NEW_CARD',
   UPDATE_CARD_COLUMN: 'UPDATE_CARD_COLUMN',
   SET_TODOS: 'SET_TODOS',
-  SET_SEARCH: 'SET_SEARCH'
+  SET_SEARCH: 'SET_SEARCH',
+  EDIT_CARD: 'EDIT_CARD',
+  DELETE_CARD: 'DELETE_CARD'
 };
 
 const reducer: IReducer = (state, action) => {
@@ -73,6 +77,24 @@ const reducer: IReducer = (state, action) => {
       return {
         ...state,
         toDos: cloned
+      };
+    case actionType.EDIT_CARD:
+        const allCards = Array.from(state.toDos);
+        const cardColumnIdx = action.data.cardColumnIdx
+        const cardIdx = action.data.cardIdx;
+        allCards[cardColumnIdx].rows[cardIdx] = action.data.updatedCard
+        setTodos(allCards)
+        return {
+          ...state,
+          toDos: allCards
+        };
+    case actionType.DELETE_CARD:
+      const clonedCards = Array.from(state.toDos);
+      clonedCards[action.data.cardColumnIdx].rows.splice(action.data.cardIdx, 1)
+      setTodos(clonedCards)
+      return {
+        ...state,
+        toDos: clonedCards
       };
     case actionType.SET_SEARCH:
       return {
