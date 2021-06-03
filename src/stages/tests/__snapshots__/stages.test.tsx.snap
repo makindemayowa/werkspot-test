@@ -40,8 +40,8 @@ exports[`Stages component creates cards based on context data 1`] = `
             onClick={[Function]}
           >
             <img
-              alt="Move to new column"
-              src="filter-list.svg"
+              alt="dropdown icon"
+              src="3dots.svg"
             />
           </button>
         </div>
@@ -93,8 +93,8 @@ exports[`Stages component creates cards based on context data 1`] = `
             onClick={[Function]}
           >
             <img
-              alt="Move to new column"
-              src="filter-list.svg"
+              alt="dropdown icon"
+              src="3dots.svg"
             />
           </button>
         </div>
@@ -137,17 +137,9 @@ exports[`Stages component creates cards based on context data 1`] = `
       </div>
       <div
         className="add-new-card"
+        onClick={[Function]}
       >
-        <form
-          onSubmit={[Function]}
-        >
-          <input
-            onChange={[Function]}
-            placeholder="Add a new card...hit enter when done"
-            type="text"
-            value=""
-          />
-        </form>
+        Add a new card
       </div>
     </div>
   </div>
@@ -187,8 +179,8 @@ exports[`Stages component creates cards based on context data 1`] = `
             onClick={[Function]}
           >
             <img
-              alt="Move to new column"
-              src="filter-list.svg"
+              alt="dropdown icon"
+              src="3dots.svg"
             />
           </button>
         </div>
@@ -240,8 +232,8 @@ exports[`Stages component creates cards based on context data 1`] = `
             onClick={[Function]}
           >
             <img
-              alt="Move to new column"
-              src="filter-list.svg"
+              alt="dropdown icon"
+              src="3dots.svg"
             />
           </button>
         </div>
@@ -284,17 +276,9 @@ exports[`Stages component creates cards based on context data 1`] = `
       </div>
       <div
         className="add-new-card"
+        onClick={[Function]}
       >
-        <form
-          onSubmit={[Function]}
-        >
-          <input
-            onChange={[Function]}
-            placeholder="Add a new card...hit enter when done"
-            type="text"
-            value=""
-          />
-        </form>
+        Add a new card
       </div>
     </div>
   </div>
@@ -334,8 +318,8 @@ exports[`Stages component creates cards based on context data 1`] = `
             onClick={[Function]}
           >
             <img
-              alt="Move to new column"
-              src="filter-list.svg"
+              alt="dropdown icon"
+              src="3dots.svg"
             />
           </button>
         </div>
@@ -387,8 +371,8 @@ exports[`Stages component creates cards based on context data 1`] = `
             onClick={[Function]}
           >
             <img
-              alt="Move to new column"
-              src="filter-list.svg"
+              alt="dropdown icon"
+              src="3dots.svg"
             />
           </button>
         </div>
@@ -440,8 +424,8 @@ exports[`Stages component creates cards based on context data 1`] = `
             onClick={[Function]}
           >
             <img
-              alt="Move to new column"
-              src="filter-list.svg"
+              alt="dropdown icon"
+              src="3dots.svg"
             />
           </button>
         </div>
@@ -484,17 +468,9 @@ exports[`Stages component creates cards based on context data 1`] = `
       </div>
       <div
         className="add-new-card"
+        onClick={[Function]}
       >
-        <form
-          onSubmit={[Function]}
-        >
-          <input
-            onChange={[Function]}
-            placeholder="Add a new card...hit enter when done"
-            type="text"
-            value=""
-          />
-        </form>
+        Add a new card
       </div>
     </div>
   </div>
