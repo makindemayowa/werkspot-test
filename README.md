@@ -11,7 +11,6 @@ This project allows you to
 ## Hosting
 
 This project is hosted using:
- - firebase - https://werkspot-test.web.app/
  - netlify - https://nervous-lalande-0ee567.netlify.app/
 ## Setup instructions
 
